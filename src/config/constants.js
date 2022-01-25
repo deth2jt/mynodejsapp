@@ -52,13 +52,13 @@ module.exports = function() {
 				'host' : process.env.DB_PRD_HOST,
 				'user' : process.env.DB_PRD_USER,
 				'password' : process.env.DB_PRD_PASS,
-				'database' : 'public.dbase'
+				'database' : 'dbase'
 			},
 			'development' : {
 				'host' : process.env.DB_PRD_HOST,
 				'user' : process.env.DB_PRD_USER,
 				'password' : process.env.DB_PRD_PASS,
-				'database' : 'public.dbase'
+				'database' : 'dbase'
 			}
 		};
 	}
@@ -66,8 +66,7 @@ module.exports = function() {
 	function applicationConfig(){
 		return {
 			'production' : {
-				'url' : 'https://' + process.env.NODE_HOST + ':' + 
-					process.env.NODE_PORT,
+				'url' : 'https://' + process.env.NODE_HOST + ':' + process.env.NODE_PORT,
 				'host' : process.env.NODE_HOST,
 				'port' : process.env.NODE_PORT
 			},
